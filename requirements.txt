@@ -1,11 +1,31 @@
+StockVision-AI dependencies
 
-pandas
-numpy
-matplotlib
-scikit-learn
+Project environment: Python 3.10.6
+
+Dashboard
+
+streamlit==1.65.0 plotly
+
+Data processing and analysis
+
+numpy pandas scikit-learn scipy matplotlib
+
+Stock market data collection
+
 yfinance
+
+Database connectivity
+
 psycopg[binary]==3.3.6
+
+AI-powered stock analysis
+
+google-genai
+
+Environment variables and configuration
+
 python-dotenv
+
+Machine learning experiments
+
 xgboost
-streamlit==1.65.0
-plotly
