@@ -1,0 +1,11 @@
+
+pandas
+numpy
+matplotlib
+scikit-learn
+yfinance
+psycopg[binary]==3.3.6
+python-dotenv
+xgboost
+streamlit==1.65.0
+plotly
