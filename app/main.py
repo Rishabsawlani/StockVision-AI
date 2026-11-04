@@ -1,8 +1,17 @@
 
+import sys
+from pathlib import Path
+
+# Add project root to Python's import path
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 import streamlit as st
 import plotly.express as px
-
 import pandas as pd
+
 from src.ai.gemini_client import generate_stock_analysis
 
 from src.analysis.analytics_engine import (
@@ -10,9 +19,11 @@ from src.analysis.analytics_engine import (
     load_stock_prices
 )
 
+
 @st.cache_data(ttl=3600, show_spinner=False)
 def cached_stock_analysis(stock_metrics):
     return generate_stock_analysis(stock_metrics)
+
 
 # Header
 st.markdown(
