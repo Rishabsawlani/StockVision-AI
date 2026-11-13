@@ -15,5 +15,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Local database backups
+# Database backups
 *.dump
+
+# Temporary database connection tests
+test_supabase.py
